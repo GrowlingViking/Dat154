@@ -3,16 +3,15 @@ class Trafikklys {
 
 public:
 
-	Trafikklys(int left, int top, int right, int bottom, int hState);
+	Trafikklys(HDC hdc, int x, int y, int hState);
 
 	~Trafikklys();
 
-	void createTrafficLight(HDC hdc);
+	void createTrafficLights();
 
 private:
-	int leftPos;
-	int topPos;
-	int rightPos;
-	int bottomPos;
+	HDC hDC;
+	int X;
+	int Y;
 	int state;
 };
