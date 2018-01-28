@@ -1,0 +1,5 @@
+﻿  EX1_Thread.cpp
+c:\dat154\lecture 06 - sdk threads\ex1_thread\ex1_thread\ex1_thread.cpp(80): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'ULONGLONG'
+  c:\dat154\lecture 06 - sdk threads\ex1_thread\ex1_thread\ex1_thread.cpp(80): note: consider using '%lld' in the format string
+  c:\dat154\lecture 06 - sdk threads\ex1_thread\ex1_thread\ex1_thread.cpp(80): note: consider using '%I64d' in the format string
+  EX1_Thread.vcxproj -> C:\DAT154\Lecture 06 - SDK Threads\EX1_Thread\Debug\EX1_Thread.exe
