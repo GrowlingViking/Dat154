@@ -167,8 +167,8 @@
     <ResourceCompile Include="WindowsProject1.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Bil.bmp" />
     <Image Include="Bil2.bmp" />
+    <Image Include="Bil1.bmp" />
     <Image Include="small.ico" />
     <Image Include="WindowsProject1.ico" />
   </ItemGroup>

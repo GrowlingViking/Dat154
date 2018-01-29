@@ -54,7 +54,10 @@
     <Image Include="WindowsProject1.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Bil.bmp">
+    <Image Include="Bil2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bil1.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
