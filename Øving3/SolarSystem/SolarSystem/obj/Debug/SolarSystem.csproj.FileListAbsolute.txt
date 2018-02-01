@@ -1,0 +1,15 @@
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\bin\Debug\SolarSystem.exe.config
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\bin\Debug\SolarSystem.exe
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\bin\Debug\SolarSystem.pdb
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\SolarSystem.csprojResolveAssemblyReference.cache
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\MainWindow.g.cs
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\App.g.cs
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\SolarSystem_MarkupCompile.cache
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\SolarSystem_MarkupCompile.lref
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\MainWindow.baml
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\SolarSystem.g.resources
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\SolarSystem.Properties.Resources.resources
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\SolarSystem.csproj.GenerateResource.Cache
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\SolarSystem.csproj.CoreCompileInputs.cache
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\SolarSystem.exe
+C:\Users\Sigurd\Desktop\Dat154\Øving3\SolarSystem\SolarSystem\obj\Debug\SolarSystem.pdb
