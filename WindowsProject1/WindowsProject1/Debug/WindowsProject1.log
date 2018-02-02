@@ -1,6 +1,6 @@
 ﻿  WindowsProject1.cpp
-c:\users\sigurd\desktop\dat154\windowsproject1\windowsproject1\windowsproject1.cpp(280): warning C4018: '<': signed/unsigned mismatch
 c:\users\sigurd\desktop\dat154\windowsproject1\windowsproject1\windowsproject1.cpp(287): warning C4018: '<': signed/unsigned mismatch
-c:\users\sigurd\desktop\dat154\windowsproject1\windowsproject1\windowsproject1.cpp(300): warning C4018: '<': signed/unsigned mismatch
+c:\users\sigurd\desktop\dat154\windowsproject1\windowsproject1\windowsproject1.cpp(294): warning C4018: '<': signed/unsigned mismatch
 c:\users\sigurd\desktop\dat154\windowsproject1\windowsproject1\windowsproject1.cpp(307): warning C4018: '<': signed/unsigned mismatch
+c:\users\sigurd\desktop\dat154\windowsproject1\windowsproject1\windowsproject1.cpp(314): warning C4018: '<': signed/unsigned mismatch
   WindowsProject1.vcxproj -> C:\Users\Sigurd\Desktop\Dat154\WindowsProject1\Debug\WindowsProject1.exe
