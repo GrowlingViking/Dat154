@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="321" VerticalAlignment="Top" Width="100" Margin="0,0,0,-0.333">
-            <Button x:Name="button" Content="Start" HorizontalAlignment="Center" Width="76" Margin="12,0"/>
+        <StackPanel HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="76" Background="SeaShell">
+            <Button x:Name="button" Content="Start" HorizontalAlignment="Center" Width="76"/>
         </StackPanel>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="170,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
 
     </Grid>
 </Window>
