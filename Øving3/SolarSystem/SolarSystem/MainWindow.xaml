@@ -8,9 +8,9 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <StackPanel HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="76" Background="SeaShell">
-            <Button x:Name="button" Content="Start" HorizontalAlignment="Center" Width="76"/>
+            <Button x:Name="start" Content="Start" HorizontalAlignment="Center" Width="76"/>
         </StackPanel>
-        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="170,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
+        <Ellipse x:Name="test" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="152,59,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
 
     </Grid>
 </Window>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using SpaceSim;
 
 namespace SolarSystem
 {
@@ -20,9 +21,27 @@ namespace SolarSystem
     /// </summary>
     public partial class MainWindow : Window
     {
+        public delegate void delg(int time);
+
+        private System.Windows.Threading.DispatcherTimer t;
+        private Planet p;
+        int time = 0;
+        public event delg MoveIt;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            t = new System.Windows.Threading.DispatcherTimer();
+            t.Interval = new TimeSpan(200000);
+            t.Tick += t_Tick;
+            t.Start();
+            
+        }
+
+        void t_Tick(object sender, EventArgs e)
+        {
+            MoveIt(time++);
         }
     }
 }
