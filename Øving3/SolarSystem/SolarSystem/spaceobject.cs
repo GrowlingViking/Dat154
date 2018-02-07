@@ -1,4 +1,5 @@
 using System;
+using System.Windows.Shapes;
 
 namespace SpaceSim {
 	public class SpaceObject {
@@ -23,7 +24,11 @@ namespace SpaceSim {
 	}
 	
 	public class Star : SpaceObject {
-		public Star(String name) : base(name) {}
+		public Star(String name, int xpos, int ypos) : base(name)
+        {
+            this.xPos = xpos;
+            this.yPos = ypos;
+        }
 		public override void Draw() {
 			Console.Write("Star : ");
 			base.Draw();
@@ -47,12 +52,8 @@ namespace SpaceSim {
 		}
         public void calcPos(int time)
         {
-            xPos = xPosStar + orbital_radius + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
-            yPos = yPosStar + orbital_radius + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
-
-            Canvas c = (Canvas)shape.Parent;
-            c.SetLeft(shape, xPos);
-            c.SetTop(shape, yPos);
+            xPos = starXPos + orbital_radius + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
+            yPos = starYPos + orbital_radius + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
         }
 	}
 }

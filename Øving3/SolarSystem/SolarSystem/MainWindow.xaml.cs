@@ -25,6 +25,7 @@ namespace SolarSystem
 
         private System.Windows.Threading.DispatcherTimer t;
         private Planet p;
+        private Star s;
         int time = 0;
         public event delg MoveIt;
 
@@ -36,6 +37,11 @@ namespace SolarSystem
             t.Interval = new TimeSpan(200000);
             t.Tick += t_Tick;
             t.Start();
+
+            s = new Star("Sola");
+            s.shape = sola;
+
+            p = new Planet("Planet", )
             
         }
 
