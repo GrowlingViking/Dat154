@@ -37,13 +37,10 @@ namespace SpaceSim {
 	
 	public class Planet : SpaceObject {
 
-        public double starXPos { get; set; }
-        public double starYPos { get; set; }
+        public Star sol { get; set; }
 
-        public Planet(String name, double starXPos, double starYPos) : base(name)
-        {
-            this.starXPos = starXPos;
-            this.starYPos = starYPos;
+        public Planet(String name, Star sol) : base(name) {
+            this.sol = sol;
         }
 
 		public override void Draw() {
@@ -52,8 +49,27 @@ namespace SpaceSim {
 		}
         public void calcPos(int time)
         {
-            xPos = starXPos + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
-            yPos = starYPos + (int)(Math.Sin(time * orbital_speed * 3.1416 / 180) * orbital_radius);
+            xPos = sol.xPos + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
+            yPos = sol.yPos + (int)(Math.Sin(time * orbital_speed * 3.1416 / 180) * orbital_radius);
         }
 	}
+
+    public class Moon : SpaceObject {
+
+        public Planet planet { get; set; }
+
+        public Moon(String name, Planet planet) : base(name) {
+            this.planet = planet;
+        }
+
+        public override void Draw() {
+            Console.Write("Moon: ");
+            base.Draw();
+        }
+
+        public void calcPos(int time) {
+            xPos = planet.xPos + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
+            yPos = planet.yPos + (int)(Math.Sin(time * orbital_speed * 3.1416 / 180) * orbital_radius);
+        }
+    }
 }

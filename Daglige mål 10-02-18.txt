@@ -1,0 +1,16 @@
+Goals today:
+// Skrive møte referat
+// Lag eit funksjonibelt solsystem
+// Start på modelering av hotell prosjektet
+
+Goals før lunsj:
+// lage noko grafisk som fungerer
+
+Goals før middag:
+// Møtereferat
+// Sett på Hotell prosjektet
+
+Goals før gaming:
+// Tegne utkast til modellering og arkitektur
+// Legge til flere planeter og måner
+// Gjøre det dynamisk og fikse sola

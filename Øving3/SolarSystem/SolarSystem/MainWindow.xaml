@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SolarSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="375" Width="560">
     <Grid x:Name="grid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="75" />
@@ -13,11 +13,12 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0" HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="75" Background="SeaShell">
-            <Button x:Name="start" Content="Start" HorizontalAlignment="Center" Width="75"/>
+            <Button x:Name="start" Content="Start" HorizontalAlignment="Center" Width="70"/>
         </StackPanel>
         <Canvas x:Name="canvas" Grid.Column="1" Background="Black" Margin="0,0,0,0">
-            <Ellipse x:Name="sola" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="50" Stroke="Black" VerticalAlignment="Center" Width="50" Canvas.Left="197" Canvas.Top="137"/>
-            <Ellipse x:Name="planet" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="25" Stroke="Black" VerticalAlignment="Top" Width="25" Canvas.Left="353" Canvas.Top="47"/>
+            <Ellipse x:Name="sola" Fill="White" HorizontalAlignment="Center" Height="50" Stroke="Black" VerticalAlignment="Center" Width="50" Canvas.Left="22" Canvas.Top="12"/>
+            <Ellipse x:Name="planet" Fill="Aquamarine" HorizontalAlignment="Left" Height="25" Stroke="Black" VerticalAlignment="Top" Width="25" Canvas.Left="98" Canvas.Top="12"/>
+            <Ellipse x:Name="måne" Fill="Gray" HorizontalAlignment="Left" Height="10" Stroke="Black" VerticalAlignment="Top" Width="10" Canvas.Left="98" Canvas.Top="42" />
         </Canvas>
 
     </Grid>
