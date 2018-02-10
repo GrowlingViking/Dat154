@@ -6,12 +6,19 @@
         xmlns:local="clr-namespace:SolarSystem"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="76" Background="SeaShell">
-            <Button x:Name="start" Content="Start" HorizontalAlignment="Center" Width="76"/>
+    <Grid x:Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="75" Background="SeaShell">
+            <Button x:Name="start" Content="Start" HorizontalAlignment="Center" Width="75"/>
         </StackPanel>
-        <Ellipse x:Name="sola" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="152,59,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
-        <Ellipse x:Name="planet" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="50" Margin="339,144,0,0" Stroke="Black" VerticalAlignment="Top" Width="50"/>
+        <Canvas x:Name="canvas" Grid.Column="1" Background="Black" Margin="0,0,0,0">
+            <Ellipse x:Name="sola" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="50" Stroke="Black" VerticalAlignment="Center" Width="50" Canvas.Left="197" Canvas.Top="137"/>
+            <Ellipse x:Name="planet" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="25" Stroke="Black" VerticalAlignment="Top" Width="25" Canvas.Left="353" Canvas.Top="47"/>
+        </Canvas>
 
     </Grid>
 </Window>

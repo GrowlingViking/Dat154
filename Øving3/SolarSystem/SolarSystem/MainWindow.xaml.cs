@@ -21,33 +21,58 @@ namespace SolarSystem
     /// </summary>
     public partial class MainWindow : Window
     {
-        public delegate void delg(int time);
+        public delegate void timerDelegate(int time);
+        public delegate void startDelegate();
 
         private System.Windows.Threading.DispatcherTimer t;
         private Planet p;
         private Star s;
         int time = 0;
-        public event delg MoveIt;
+
+        public event timerDelegate MoveIt;
 
         public MainWindow()
         {
             InitializeComponent();
 
+            start.Click += startSim;
+
+            s = new Star("Sola", 200, 150);
+            s.shape = sola;
+
+            p = new Planet("Planet", s.xPos, s.yPos);
+            p.shape = planet;
+            p.orbital_radius = 100;
+            p.orbital_speed = 2;
+            MoveIt += p.calcPos;
+
+        }
+
+        void startSim(object sender, EventArgs e)
+        {
             t = new System.Windows.Threading.DispatcherTimer();
             t.Interval = new TimeSpan(200000);
             t.Tick += t_Tick;
             t.Start();
 
-            s = new Star("Sola");
-            s.shape = sola;
-
-            p = new Planet("Planet", )
             
         }
 
         void t_Tick(object sender, EventArgs e)
         {
             MoveIt(time++);
+
+            drawPlanets();
+        }
+
+        void drawPlanets()
+        {
+            Canvas c = canvas;
+            Canvas.SetLeft(s.shape, s.xPos);
+            Canvas.SetTop(s.shape, s.yPos);
+
+            Canvas.SetLeft(p.shape, p.xPos);
+            Canvas.SetTop(p.shape, p.yPos);
         }
     }
 }

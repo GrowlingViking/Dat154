@@ -6,8 +6,8 @@ namespace SpaceSim {
 		
 		protected String name;
 
-        public int xPos { get; set; }
-        public int yPos { get; set; }
+        public double xPos { get; set; }
+        public double yPos { get; set; }
 
         public int orbital_radius { get; set; }
         public int orbital_period { get; set; }
@@ -24,7 +24,7 @@ namespace SpaceSim {
 	}
 	
 	public class Star : SpaceObject {
-		public Star(String name, int xpos, int ypos) : base(name)
+		public Star(String name, double xpos, double ypos) : base(name)
         {
             this.xPos = xpos;
             this.yPos = ypos;
@@ -37,10 +37,10 @@ namespace SpaceSim {
 	
 	public class Planet : SpaceObject {
 
-        public int starXPos { get; set; }
-        public int starYPos { get; set; }
+        public double starXPos { get; set; }
+        public double starYPos { get; set; }
 
-        public Planet(String name, int starXPos, int starYPos) : base(name)
+        public Planet(String name, double starXPos, double starYPos) : base(name)
         {
             this.starXPos = starXPos;
             this.starYPos = starYPos;
@@ -52,8 +52,8 @@ namespace SpaceSim {
 		}
         public void calcPos(int time)
         {
-            xPos = starXPos + orbital_radius + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
-            yPos = starYPos + orbital_radius + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
+            xPos = starXPos + (int)(Math.Cos(time * orbital_speed * 3.1416 / 180) * orbital_radius);
+            yPos = starYPos + (int)(Math.Sin(time * orbital_speed * 3.1416 / 180) * orbital_radius);
         }
 	}
 }
