@@ -29,6 +29,7 @@ namespace SolarSystem
         private Star s;
         private Moon m;
         int time = 0;
+        int counter = 0;
 
         public event timerDelegate MoveIt;
 
@@ -44,7 +45,7 @@ namespace SolarSystem
             ColumnDefinition column = columns.ElementAt(0);
             double middleX = column.ActualWidth;
     
-            s = new Star("Sola", 215, 145);
+            s = new Star("Sola");
             s.shape = sola;
 
             p = new Planet("Planet", s);
@@ -63,7 +64,7 @@ namespace SolarSystem
         void startSim(object sender, EventArgs e)
         {
             t = new System.Windows.Threading.DispatcherTimer();
-            t.Interval = new TimeSpan(200000);
+            t.Interval = new TimeSpan(10000);
             t.Tick += t_Tick;
             t.Start();
 
@@ -72,7 +73,11 @@ namespace SolarSystem
 
         void t_Tick(object sender, EventArgs e)
         {
-            MoveIt(time++);
+            counter++;
+            if (counter % 2 == 0)
+            {
+                MoveIt(time++);
+            }
 
             drawPlanets();
         }
