@@ -24,7 +24,7 @@ namespace SpaceSim {
 	}
 	
 	public class Star : SpaceObject {
-		public Star(String name, double xpos, double ypos) : base(name)
+		public Star(String name, double xpos = 0, double ypos = 0) : base(name)
         {
             this.xPos = xpos;
             this.yPos = ypos;
