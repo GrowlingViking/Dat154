@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Test.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Test"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Button x:Name="Cleaning" Content="Cleaning" Grid.Row="0" HorizontalAlignment="Center" Margin="105,50,105,25" VerticalAlignment="Center" Height="350" Width="750" RequestedTheme="Dark" Click="Cleaning_Click"/>
+        <Button x:Name="Maintenance" Content="Maintenance" Grid.Row="1" HorizontalAlignment="Center" Margin="105,25,105,25" VerticalAlignment="Center" Height="350" Width="750" RequestedTheme="Dark" Click="Maintenance_Click"/>
+        <Button x:Name="Service" Content="Service" Grid.Row="2" HorizontalAlignment="Center" Margin="105,25,105,50" VerticalAlignment="Center" Height="350" Width="750" RequestedTheme="Dark" Click="Service_Click"/>
+
+    </Grid>
+</Page>
