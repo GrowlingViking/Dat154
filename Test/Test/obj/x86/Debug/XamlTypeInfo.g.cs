@@ -132,17 +132,19 @@ namespace Test.Test_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "Test.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "Test.TaskList";
+            _typeNameTable[4] = "Test.TaskPage";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::Test.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::Test.TaskList);
+            _typeTable[4] = typeof(global::Test.TaskPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,6 +181,7 @@ namespace Test.Test_XamlTypeInfo
 
         private object Activate_0_MainPage() { return new global::Test.MainPage(); }
         private object Activate_3_TaskList() { return new global::Test.TaskList(); }
+        private object Activate_4_TaskPage() { return new global::Test.TaskPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -208,6 +211,13 @@ namespace Test.Test_XamlTypeInfo
             case 3:   //  Test.TaskList
                 userType = new global::Test.Test_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_3_TaskList;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Test.TaskPage
+                userType = new global::Test.Test_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_TaskPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

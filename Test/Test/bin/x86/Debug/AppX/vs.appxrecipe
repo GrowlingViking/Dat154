@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-18T15:16:06.789</Modified>
+      <Modified>2018-02-18T20:10:38.778</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\Test.exe">
       <PackagePath>entrypoint\Test.exe</PackagePath>
-      <Modified>2018-02-18T15:16:06.309</Modified>
+      <Modified>2018-02-18T20:10:38.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sigurd\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -535,7 +535,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\Test.xr.xml">
       <PackagePath>Test.xr.xml</PackagePath>
-      <Modified>2018-02-18T15:13:20.638</Modified>
+      <Modified>2018-02-18T20:08:30.639</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -544,11 +544,11 @@
     <AppxPackagedFile Include="C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-18T15:16:06.646</Modified>
+      <Modified>2018-02-18T20:10:38.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\Core\Test.exe">
       <PackagePath>Test.exe</PackagePath>
-      <Modified>2018-02-18T15:16:06.785</Modified>
+      <Modified>2018-02-18T20:10:38.775</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

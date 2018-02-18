@@ -122,7 +122,6 @@ C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\System.Xml.ReaderWriter.d
 C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\Test.csprojResolveAssemblyReference.cache
 C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\App.g.i.cs
 C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\App.g.cs
 C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\MainPage.g.i.cs
@@ -216,3 +215,8 @@ C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\TaskList.g.i.cs
 C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\TaskList.g.cs
 C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\TaskList.xaml
 C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\TaskList.xbf
+C:\Users\Sigurd\Desktop\Dat154\Test\Test\bin\x86\Debug\TaskPage.xbf
+C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\TaskPage.g.i.cs
+C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\TaskPage.g.cs
+C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\TaskPage.xaml
+C:\Users\Sigurd\Desktop\Dat154\Test\Test\obj\x86\Debug\TaskPage.xbf
