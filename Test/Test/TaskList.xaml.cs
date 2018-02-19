@@ -24,11 +24,12 @@ namespace Test
     /// </summary>
     public sealed partial class TaskList : Page
     {
+        public static ServiceTask activeTask;
         public TaskList()
         {
             this.InitializeComponent();
             Header.Text = MainPage.state;
-            GetTaskListAsync();
+            //GetTaskListAsync();
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -37,7 +38,7 @@ namespace Test
         }
 
         HttpClient client = new HttpClient();
-        Uri uri = new Uri("TODO");
+        Uri uri = new Uri("TODO:TODO.com" + MainPage.state);
 
         private async void GetTaskListAsync()
         {
@@ -46,16 +47,20 @@ namespace Test
             {
                 result = await client.GetStringAsync(uri);
             }
-            catch (global::System.Exception)
+            catch (Exception e)
             {
 
-                throw;
+                throw e;
             }
-                Tasks.ItemsSource = JsonConvert.DeserializeObject<List<ServiceTask>>(result);
+
+            Tasks.ItemsSource = JsonConvert.DeserializeObject<List<ServiceTask>>(result);
             
         }
-        
-        
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(TaskPage));
+        }
     }
 
     public class ServiceTask
@@ -63,5 +68,6 @@ namespace Test
         public int ID { get; set; }
         public string ServiceType { get; set; }
         public string Status { get; set; }
+        public int roomNr;
     }
 }

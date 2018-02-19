@@ -26,6 +26,8 @@ namespace Test
         public TaskPage()
         {
             this.InitializeComponent();
+            //Header.Text = "Room nr: " + TaskList.activeTask.roomNr.ToString();
+            //SetStatusOnButtons();
         }
 
         private void ChangeStatus(object sender, RoutedEventArgs e)
@@ -42,6 +44,22 @@ namespace Test
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(TaskList));
+        }
+
+        private void SetStatusOnButtons()
+        {
+            switch (TaskList.activeTask.Status)
+            {
+                case "In Progress":
+                    InProgress.IsChecked = true;
+                    break;
+                case "Finished":
+                    Finished.IsChecked = true;
+                    break;
+                default:
+                    New.IsChecked = true;
+                    break;
+            }        
         }
     }
 }

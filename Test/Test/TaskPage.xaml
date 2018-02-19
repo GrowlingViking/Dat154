@@ -22,9 +22,9 @@
         <StackPanel Grid.Row="1">
             <TextBlock Text="Status" Style="{ThemeResource TitleTextBlockStyle}" TextAlignment="Center"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <RadioButton Content="New" Tag="New" Checked="ChangeStatus" Margin="10,0"/>
-                <RadioButton Content="In Progress" Tag="In Progress" Checked="ChangeStatus" Margin="10,0"/>
-                <RadioButton Content="Finished" Tag="Finished" Checked="ChangeStatus" Margin="10,0"/>
+                <RadioButton x:Name="New" Content="New" Tag="New" Checked="ChangeStatus" Margin="10,0"/>
+                <RadioButton x:Name="InProgress" Content="In Progress" Tag="In Progress" Checked="ChangeStatus" Margin="10,0"/>
+                <RadioButton x:Name="Finished" Content="Finished" Tag="Finished" Checked="ChangeStatus" Margin="10,0"/>
             </StackPanel>
         </StackPanel>
 
@@ -32,7 +32,7 @@
 
         <StackPanel Grid.Row="3" Orientation="Vertical" HorizontalAlignment="Center">
             <TextBlock Text="New Note" Style="{ThemeResource TitleTextBlockStyle}" TextAlignment="Center"/>
-            <TextBox PlaceholderText="Your note here!" TextWrapping="NoWrap" AcceptsReturn="True" IsSpellCheckEnabled="True" SelectionHighlightColor="Blue" Width="500"/>
+            <TextBox PlaceholderText="Your note here!" TextWrapping="NoWrap" AcceptsReturn="True" IsSpellCheckEnabled="True" SelectionHighlightColor="Blue" Width="500" RequestedTheme="Dark"/>
         </StackPanel>
 
         <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
