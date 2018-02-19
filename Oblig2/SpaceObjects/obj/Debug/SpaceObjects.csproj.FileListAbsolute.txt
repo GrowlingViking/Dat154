@@ -1,0 +1,12 @@
+C:\Users\Kenneth\source\repos\Oblig2\SpaceObjects\bin\Debug\SpaceObjects.dll
+C:\Users\Kenneth\source\repos\Oblig2\SpaceObjects\bin\Debug\SpaceObjects.pdb
+C:\Users\Kenneth\source\repos\Oblig2\SpaceObjects\obj\Debug\SpaceObjects.csprojResolveAssemblyReference.cache
+C:\Users\Kenneth\source\repos\Oblig2\SpaceObjects\obj\Debug\SpaceObjects.csproj.CoreCompileInputs.cache
+C:\Users\Kenneth\source\repos\Oblig2\SpaceObjects\obj\Debug\SpaceObjects.dll
+C:\Users\Kenneth\source\repos\Oblig2\SpaceObjects\obj\Debug\SpaceObjects.pdb
+C:\Users\Sigurd\Desktop\Dat154\Oblig2\SpaceObjects\bin\Debug\SpaceObjects.dll
+C:\Users\Sigurd\Desktop\Dat154\Oblig2\SpaceObjects\bin\Debug\SpaceObjects.pdb
+C:\Users\Sigurd\Desktop\Dat154\Oblig2\SpaceObjects\obj\Debug\SpaceObjects.csprojResolveAssemblyReference.cache
+C:\Users\Sigurd\Desktop\Dat154\Oblig2\SpaceObjects\obj\Debug\SpaceObjects.csproj.CoreCompileInputs.cache
+C:\Users\Sigurd\Desktop\Dat154\Oblig2\SpaceObjects\obj\Debug\SpaceObjects.dll
+C:\Users\Sigurd\Desktop\Dat154\Oblig2\SpaceObjects\obj\Debug\SpaceObjects.pdb
