@@ -29,7 +29,7 @@ namespace Test
         {
             this.InitializeComponent();
             Header.Text = MainPage.state;
-            //GetTaskListAsync();
+            GetTaskListAsync();
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -38,7 +38,7 @@ namespace Test
         }
 
         HttpClient client = new HttpClient();
-        Uri uri = new Uri("TODO:TODO.com" + MainPage.state);
+        Uri uri = new Uri("http://localhost:50094/api/Task?type=" + MainPage.state);
 
         private async void GetTaskListAsync()
         {

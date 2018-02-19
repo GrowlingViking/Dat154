@@ -31,6 +31,11 @@ namespace WebAPI.Models
             return tasks.Find(t => t.ID == id);
         }
 
+        public static List<Task> GetTask(string type)
+        {
+            return tasks.FindAll(t => t.ServiceType == type);
+        }
+
         public static void UpdateTask(int id, Task task)
         {
             tasks.Remove(tasks.Find(t => t.ID == id));

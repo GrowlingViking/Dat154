@@ -23,6 +23,12 @@ namespace WebAPI.Controllers
             return TaskModel.GetTask(id);
         }
 
+        // GET api/values/Cleaning
+        public IEnumerable<Task> Get(string type)
+        {
+            return TaskModel.GetTask(type);
+        }
+
         // POST api/values
         public void Post([FromBody]string value)
         {
