@@ -52,7 +52,7 @@ namespace Test
                 throw;
             }
                 Tasks.ItemsSource = JsonConvert.DeserializeObject<List<ServiceTask>>(result);
-            }
+            
         }
         
         
