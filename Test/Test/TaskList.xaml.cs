@@ -68,6 +68,6 @@ namespace Test
         public int ID { get; set; }
         public string ServiceType { get; set; }
         public string Status { get; set; }
-        public int roomNr;
+        public int RoomNr { get; set; }
     }
 }
