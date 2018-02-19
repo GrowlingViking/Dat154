@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,23 +25,18 @@ namespace Test
     /// </summary>
     public sealed partial class TaskList : Page
     {
-        public static ServiceTask activeTask;
+        public static ServiceTask ActiveTask { get; set; }
+        public ObservableCollection<ServiceTask> TaskSource { get; set; }
         public TaskList()
         {
             this.InitializeComponent();
             Header.Text = MainPage.state;
-            GetTaskListAsync();
+            HttpClient client = new HttpClient();
+            Uri uri = new Uri("http://localhost:50094/api/Task?type=" + MainPage.state);
+            GetTaskListAsync(client, uri);
         }
 
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
-        }
-
-        HttpClient client = new HttpClient();
-        Uri uri = new Uri("http://localhost:50094/api/Task?type=" + MainPage.state);
-
-        private async void GetTaskListAsync()
+        private async void GetTaskListAsync(HttpClient client, Uri uri)
         {
             string result;
             try
@@ -53,8 +49,12 @@ namespace Test
                 throw e;
             }
 
-            Tasks.ItemsSource = JsonConvert.DeserializeObject<List<ServiceTask>>(result);
-            
+            TaskSource = JsonConvert.DeserializeObject<ObservableCollection<ServiceTask>>(result);
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
 
         private void NextButton_Click(object sender, RoutedEventArgs e)

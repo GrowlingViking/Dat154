@@ -48,7 +48,7 @@ namespace Test
 
         private void SetStatusOnButtons()
         {
-            switch (TaskList.activeTask.Status)
+            switch (TaskList.ActiveTask.Status)
             {
                 case "In Progress":
                     InProgress.IsChecked = true;
