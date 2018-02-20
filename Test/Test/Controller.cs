@@ -40,5 +40,20 @@ namespace Test
 
             tasks = JsonConvert.DeserializeObject<List<ServiceTask>>(result);
         }
+
+        public static string GetStatusOnActive()
+        {
+            return activeTask.Status;
+        }
+
+        public static void SetActiveTasks(ServiceTask task)
+        {
+            activeTask = task;
+        }
+
+        public static ServiceTask GetActiveTask()
+        {
+            return activeTask;
+        }
     }
 }

@@ -22,18 +22,19 @@ namespace Test
     /// </summary>
     public sealed partial class TaskPage : Page
     {
-        public string status;
+        private ServiceTask activeTask;
         public TaskPage()
         {
             this.InitializeComponent();
-            //Header.Text = "Room nr: " + TaskList.activeTask.roomNr.ToString();
-            //SetStatusOnButtons();
+            activeTask = Controller.GetActiveTask();
+            Header.Text = "Room nr: " + activeTask.RoomNr;
+            SetStatusOnButtons(activeTask.Status);
         }
 
         private void ChangeStatus(object sender, RoutedEventArgs e)
         {
             RadioButton rb = sender as RadioButton;
-            status = (String) rb.Tag;
+            activeTask.Status = (String) rb.Tag;
         }
 
         private void DoneButton_Click(object sender, RoutedEventArgs e)
@@ -46,20 +47,20 @@ namespace Test
             this.Frame.Navigate(typeof(TaskList));
         }
 
-        //private void SetStatusOnButtons()
-        //{
-        //    switch (TaskList.ActiveTask.Status)
-        //    {
-        //        case "In Progress":
-        //            InProgress.IsChecked = true;
-        //            break;
-        //        case "Finished":
-        //            Finished.IsChecked = true;
-        //            break;
-        //        default:
-        //            New.IsChecked = true;
-        //            break;
-        //    }        
-        //}
+        private void SetStatusOnButtons(string status)
+        {
+            switch (status)
+            {
+                case "In Progress":
+                    InProgress.IsChecked = true;
+                    break;
+                case "Finished":
+                    Finished.IsChecked = true;
+                    break;
+                default:
+                    New.IsChecked = true;
+                    break;
+            }
+        }
     }
 }

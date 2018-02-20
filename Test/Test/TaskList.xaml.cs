@@ -25,7 +25,6 @@ namespace Test
     /// </summary>
     public sealed partial class TaskList : Page
     {
-        private static ServiceTask ActiveTask;
         private List<ServiceTask> TaskSource;
         public TaskList()
         {
@@ -41,6 +40,15 @@ namespace Test
 
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {
+            this.Frame.Navigate(typeof(TaskPage));
+        }
+
+        private void Tasks_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ServiceTask activeTask = (ServiceTask)e.ClickedItem;
+            
+            Controller.SetActiveTasks(activeTask);
+
             this.Frame.Navigate(typeof(TaskPage));
         }
     }
