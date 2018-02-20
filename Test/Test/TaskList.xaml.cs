@@ -38,11 +38,6 @@ namespace Test
             this.Frame.Navigate(typeof(MainPage));
         }
 
-        private void NextButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(TaskPage));
-        }
-
         private void Tasks_ItemClick(object sender, ItemClickEventArgs e)
         {
             ServiceTask activeTask = (ServiceTask)e.ClickedItem;

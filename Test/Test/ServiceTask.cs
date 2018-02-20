@@ -12,5 +12,6 @@ namespace Test
         public string ServiceType { get; set; }
         public string Status { get; set; }
         public int RoomNr { get; set; }
+        public List<string> Notes { get; set; }
     }
 }

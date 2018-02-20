@@ -11,7 +11,7 @@ namespace Test
     class Controller
     {
         private static ServiceTask activeTask;
-        private static List<ServiceTask> tasks;
+        private static List<ServiceTask> tasks = new List<ServiceTask>();
 
         public static void GetAllTasksFromTheWeb()
         {
@@ -55,5 +55,7 @@ namespace Test
         {
             return activeTask;
         }
+
+
     }
 }

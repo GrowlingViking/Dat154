@@ -23,12 +23,14 @@ namespace Test
     public sealed partial class TaskPage : Page
     {
         private ServiceTask activeTask;
+        private List<String> notes;
         public TaskPage()
         {
             this.InitializeComponent();
             activeTask = Controller.GetActiveTask();
             Header.Text = "Room nr: " + activeTask.RoomNr;
             SetStatusOnButtons(activeTask.Status);
+            Notes.ItemsSource = activeTask.Notes;
         }
 
         private void ChangeStatus(object sender, RoutedEventArgs e)

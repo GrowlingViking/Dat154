@@ -31,7 +31,6 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button x:Name="BackButton" Content="Go Back" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" Width="200" Margin="0,10,0,10" Padding="0,10,0,10" Click="BackButton_Click"/>
-        <Button x:Name="NextButton" Content="Next" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Height="100" Width="200" Margin="0,10,0,10" Padding="0,10,0,10" Click="NextButton_Click"/>
-
+        
     </Grid>
 </Page>
