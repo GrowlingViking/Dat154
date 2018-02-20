@@ -46,20 +46,20 @@ namespace Test
             this.Frame.Navigate(typeof(TaskList));
         }
 
-        private void SetStatusOnButtons()
-        {
-            switch (TaskList.ActiveTask.Status)
-            {
-                case "In Progress":
-                    InProgress.IsChecked = true;
-                    break;
-                case "Finished":
-                    Finished.IsChecked = true;
-                    break;
-                default:
-                    New.IsChecked = true;
-                    break;
-            }        
-        }
+        //private void SetStatusOnButtons()
+        //{
+        //    switch (TaskList.ActiveTask.Status)
+        //    {
+        //        case "In Progress":
+        //            InProgress.IsChecked = true;
+        //            break;
+        //        case "Finished":
+        //            Finished.IsChecked = true;
+        //            break;
+        //        default:
+        //            New.IsChecked = true;
+        //            break;
+        //    }        
+        //}
     }
 }

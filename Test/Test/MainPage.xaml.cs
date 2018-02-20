@@ -28,6 +28,7 @@ namespace Test
         public MainPage()
         {
             this.InitializeComponent();
+            Controller.GetAllTasksFromTheWeb();
         }
 
         private void Cleaning_Click(object sender, RoutedEventArgs e)

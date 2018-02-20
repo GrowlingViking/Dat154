@@ -25,31 +25,13 @@ namespace Test
     /// </summary>
     public sealed partial class TaskList : Page
     {
-        public static ServiceTask ActiveTask { get; set; }
-        public ObservableCollection<ServiceTask> TaskSource { get; set; }
+        private static ServiceTask ActiveTask;
+        private List<ServiceTask> TaskSource;
         public TaskList()
         {
             this.InitializeComponent();
             Header.Text = MainPage.state;
-            HttpClient client = new HttpClient();
-            Uri uri = new Uri("http://localhost:50094/api/Task?type=" + MainPage.state);
-            GetTaskListAsync(client, uri);
-        }
-
-        private async void GetTaskListAsync(HttpClient client, Uri uri)
-        {
-            string result;
-            try
-            {
-                result = await client.GetStringAsync(uri);
-            }
-            catch (Exception e)
-            {
-
-                throw e;
-            }
-
-            TaskSource = JsonConvert.DeserializeObject<ObservableCollection<ServiceTask>>(result);
+            TaskSource = Controller.GetTasks(MainPage.state);
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -61,13 +43,5 @@ namespace Test
         {
             this.Frame.Navigate(typeof(TaskPage));
         }
-    }
-
-    public class ServiceTask
-    {
-        public int ID { get; set; }
-        public string ServiceType { get; set; }
-        public string Status { get; set; }
-        public int RoomNr { get; set; }
     }
 }
